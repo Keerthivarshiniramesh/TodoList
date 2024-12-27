@@ -47,7 +47,7 @@ export default function Createlist() {
                     <img src={cal} style={{ width: "30px", height: "30px" }} className='ms-3 img1 position-relative ' onClick={() => setClick(!click)} />
                     {
                         click &&
-                        <input type="date" className=' position-absolute dates' onChange={(e) => Stores(e, "time")} />
+                        <input type="datetime-local" className=' position-absolute dates' onChange={(e) => Stores(e, "time")} />
                     }
 
                     {/* <i classname="bi bi-calendar2-check-fill"></i> */}

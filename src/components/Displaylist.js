@@ -7,7 +7,7 @@ export default function () {
 
     let { lists, setLists } = useContext(Contextuse)
 
-    
+
     let [stable, setStable] = useState(null)
 
     // let remove = props.send
@@ -65,7 +65,7 @@ export default function () {
                                 <div className='float-start set'>  {
                                     stable === index ?
                                         <div>
-                                            <input type='date' value={ele.time} className='inpu' onChange={(e) => Check(e, index, "time")} ></input>
+                                            <input type='datetime-local' value={ele.time} className='inpu' onChange={(e) => Check(e, index, "time")} ></input>
                                             <button onClick={() => save()} className='bg-primary border rounded text-white ms-3 p-1 add1 '>Save</button>
                                         </div>
                                         :
